@@ -1,0 +1,20 @@
+<h1>Books#create</h1>
+<p>Find me in app/views/books/create.html.erb</p>
+
+<%= form_for @book, url: books_create_path do |f| %>
+
+<%= f.label :title %>
+<%= f.text_field :title %>
+
+<%= f.label :release_date %>
+<%= f.text_field :release_date %>
+
+<%= f.label :base_price %>
+<%= f.text_field :base_price %>
+
+<%= f.label :author %>
+<%= f.collection_select :authors, Author.order(:last_name), :id, :full_name %>
+
+<%= f.submit "Create Book" %>
+
+<% end %>
