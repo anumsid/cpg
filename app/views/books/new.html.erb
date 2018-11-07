@@ -1,7 +1,7 @@
 <h1>Books#create</h1>
 <p>Find me in app/views/books/create.html.erb</p>
 
-<%= form_for @book, url: books_create_path do |f| %>
+<%= form_for @book do |f| %>
 
 <%= f.label :title %>
 <%= f.text_field :title %>
@@ -13,7 +13,10 @@
 <%= f.text_field :base_price %>
 
 <%= f.label :author %>
-<%= f.collection_select :authors, Author.order(:last_name), :id, :full_name %>
+<%= select_tag :authors_ids, options_for_select(Author.all.collect { |author| [author.full_name, author.id] }), {:multiple=>true} %>
+
+<%= f.label :format %>
+<%= f.select :format_id, options_for_select(Format.all.collect { |fmt| [fmt.name, fmt.id] })  %>
 
 <%= f.submit "Create Book" %>
 

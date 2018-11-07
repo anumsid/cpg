@@ -26,6 +26,7 @@ ActiveRecord::Schema.define(version: 2018_11_04_184212) do
   end
 
   create_table "books", force: :cascade do |t|
+    t.integer "format_id"
     t.string "title"
     t.string "release_date", null: false
     t.string "base_price"

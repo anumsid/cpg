@@ -7,6 +7,7 @@ class BooksController < ApplicationController
 
   def create
     @book = Book.new(book_params)
+    @book.authors << Author.where(id: params[:authors_ids])
     if @book.save
        @book
     end
@@ -31,10 +32,12 @@ class BooksController < ApplicationController
   private
 
   def book_params
-    params.permit(:title, :release_date, :base_price)
+    params.require(:book).permit(:title, :release_date, :base_price, :format_id)
   end
 
   def find_book
     @book = Book.find(params[:id])
   end
+
+
 end

@@ -32,7 +32,7 @@ class FormatsController < ApplicationController
   private
 
   def format_params
-    params.permit(:name)
+    params.require(:format).permit(:name)
   end
 
   def find_format
