@@ -4,5 +4,6 @@ class BookValidator < ActiveModel::Validator
     if Date.today - Date.strptime(record.release_date, '%m/%d/%Y') <= days_two_months && record.base_price.blank?
       record.errors.add(:base_price, "Must include base price if release date within two months")
     end
+    record.title = record.title.gsub(/^(A|The)\s/, "").scan(/^.{0,20}/).first
   end
 end

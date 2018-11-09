@@ -1,0 +1,256 @@
+{
+  "RSpec": {
+    "coverage": {
+      "/Users/anum/Desktop/cbrg/cpg/app/helpers/api/v1_helper.rb": [
+        1,
+        null
+      ],
+      "/Users/anum/Desktop/cbrg/cpg/app/helpers/api/v1/authors_helper.rb": [
+        1,
+        null
+      ],
+      "/Users/anum/Desktop/cbrg/cpg/app/helpers/api/v1/book_controller_helper.rb": [
+        1,
+        null
+      ],
+      "/Users/anum/Desktop/cbrg/cpg/app/helpers/api/v1/books_helper.rb": [
+        1,
+        null
+      ],
+      "/Users/anum/Desktop/cbrg/cpg/app/helpers/api/v1/formats_helper.rb": [
+        1,
+        null
+      ],
+      "/Users/anum/Desktop/cbrg/cpg/app/helpers/application_helper.rb": [
+        1,
+        null
+      ],
+      "/Users/anum/Desktop/cbrg/cpg/app/helpers/authors_helper.rb": [
+        1,
+        null
+      ],
+      "/Users/anum/Desktop/cbrg/cpg/app/helpers/books_helper.rb": [
+        1,
+        null
+      ],
+      "/Users/anum/Desktop/cbrg/cpg/app/helpers/formats_helper.rb": [
+        1,
+        null
+      ],
+      "/Users/anum/Desktop/cbrg/cpg/app/models/format.rb": [
+        1,
+        1,
+        null,
+        1,
+        1,
+        null,
+        null
+      ],
+      "/Users/anum/Desktop/cbrg/cpg/app/models/application_record.rb": [
+        1,
+        1,
+        null
+      ],
+      "/Users/anum/Desktop/cbrg/cpg/app/mailers/application_mailer.rb": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "/Users/anum/Desktop/cbrg/cpg/app/models/authors_book.rb": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "/Users/anum/Desktop/cbrg/cpg/app/models/book.rb": [
+        0,
+        0,
+        0,
+        0,
+        null,
+        0,
+        null,
+        0,
+        0,
+        0
+      ],
+      "/Users/anum/Desktop/cbrg/cpg/app/models/author.rb": [
+        0,
+        0,
+        0,
+        null,
+        0,
+        null,
+        0,
+        0,
+        0,
+        0
+      ],
+      "/Users/anum/Desktop/cbrg/cpg/app/models/concerns/book_validator.rb": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "/Users/anum/Desktop/cbrg/cpg/app/jobs/application_job.rb": [
+        0,
+        0
+      ],
+      "/Users/anum/Desktop/cbrg/cpg/app/controllers/application_controller.rb": [
+        0,
+        0,
+        0
+      ],
+      "/Users/anum/Desktop/cbrg/cpg/app/controllers/formats_controller.rb": [
+        0,
+        0,
+        null,
+        0,
+        0,
+        0,
+        null,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        null,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        null,
+        null,
+        0,
+        0,
+        0,
+        null,
+        0,
+        0,
+        0,
+        null,
+        null,
+        0,
+        null,
+        0,
+        0,
+        0,
+        null,
+        0,
+        0,
+        0,
+        0
+      ],
+      "/Users/anum/Desktop/cbrg/cpg/app/controllers/books_controller.rb": [
+        0,
+        0,
+        null,
+        0,
+        0,
+        0,
+        null,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        null,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        null,
+        null,
+        0,
+        0,
+        0,
+        null,
+        0,
+        0,
+        0,
+        null,
+        0,
+        null,
+        0,
+        0,
+        0,
+        null,
+        0,
+        0,
+        0,
+        null,
+        null,
+        0
+      ],
+      "/Users/anum/Desktop/cbrg/cpg/app/controllers/authors_controller.rb": [
+        0,
+        0,
+        null,
+        0,
+        0,
+        0,
+        null,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        null,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        null,
+        null,
+        0,
+        0,
+        0,
+        null,
+        0,
+        0,
+        0,
+        null,
+        null,
+        0,
+        null,
+        0,
+        0,
+        0,
+        null,
+        0,
+        0,
+        0,
+        0
+      ],
+      "/Users/anum/Desktop/cbrg/cpg/app/channels/application_cable/connection.rb": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "/Users/anum/Desktop/cbrg/cpg/app/channels/application_cable/channel.rb": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    "timestamp": 1541727980
+  }
+}

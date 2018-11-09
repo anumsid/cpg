@@ -7,3 +7,4 @@ class Book < ApplicationRecord
 
   validates :release_date, presence: true
   validates_with BookValidator
+end
