@@ -1,2 +1,18 @@
-<h1>Books#show</h1>
-<p>Find me in app/views/books/show.html.erb</p>
+<h1>
+  <b><%= @book.title %></b>
+</h1>
+<h3>
+  <b>Release Date:</b> <%= Date.strptime(@book.release_date, '%m/%d/%Y').strftime('%m-%d-%Y') %>
+</h3>
+<h3>
+  <b>Base Price:</b> <%= @book.base_price %>
+</h3>
+<h3>
+  <b>Authors: </b>
+  <% @book.authors.each_with_index do |author, i| %>
+    <%= author.full_name + (i < @book.authors.size - 1 ? ',' : '') %>
+  <% end %>
+</h3>
+<h3>
+  <b>Format:</b> <%= @book.format.name %>
+</h3>

@@ -37,8 +37,11 @@
         1,
         null
       ],
-      "/Users/anum/Desktop/cbrg/cpg/app/models/format.rb": [
+      "/Users/anum/Desktop/cbrg/cpg/app/models/author.rb": [
         1,
+        1,
+        1,
+        null,
         1,
         null,
         1,
@@ -51,6 +54,38 @@
         1,
         null
       ],
+      "/Users/anum/Desktop/cbrg/cpg/app/models/book.rb": [
+        1,
+        1,
+        1,
+        1,
+        null,
+        1,
+        null,
+        1,
+        1,
+        null
+      ],
+      "/Users/anum/Desktop/cbrg/cpg/app/models/concerns/book_validator.rb": [
+        1,
+        1,
+        0,
+        0,
+        0,
+        null,
+        0,
+        null,
+        null
+      ],
+      "/Users/anum/Desktop/cbrg/cpg/app/models/format.rb": [
+        1,
+        1,
+        null,
+        1,
+        1,
+        null,
+        null
+      ],
       "/Users/anum/Desktop/cbrg/cpg/app/mailers/application_mailer.rb": [
         0,
         0,
@@ -58,41 +93,6 @@
         0
       ],
       "/Users/anum/Desktop/cbrg/cpg/app/models/authors_book.rb": [
-        0,
-        0,
-        0,
-        0
-      ],
-      "/Users/anum/Desktop/cbrg/cpg/app/models/book.rb": [
-        0,
-        0,
-        0,
-        0,
-        null,
-        0,
-        null,
-        0,
-        0,
-        0
-      ],
-      "/Users/anum/Desktop/cbrg/cpg/app/models/author.rb": [
-        0,
-        0,
-        0,
-        null,
-        0,
-        null,
-        0,
-        0,
-        0,
-        0
-      ],
-      "/Users/anum/Desktop/cbrg/cpg/app/models/concerns/book_validator.rb": [
-        0,
-        0,
-        0,
-        0,
-        0,
         0,
         0,
         0,
@@ -165,6 +165,16 @@
         0,
         0,
         0,
+        0,
+        0,
+        null,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        null,
         null,
         0,
         0,
@@ -172,12 +182,12 @@
         0,
         0,
         0,
-        null,
+        0,
         null,
         0,
         0,
         0,
-        null,
+        0,
         0,
         0,
         0,
@@ -251,6 +261,6 @@
         0
       ]
     },
-    "timestamp": 1541727980
+    "timestamp": 1541810173
   }
 }

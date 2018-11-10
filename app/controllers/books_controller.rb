@@ -10,6 +10,8 @@ class BooksController < ApplicationController
     @book.authors << Author.where(id: params[:authors_ids])
     if @book.save
        @book
+    else
+      render :new
     end
   end
 
@@ -22,11 +24,19 @@ class BooksController < ApplicationController
 
 
   def index
-    @books = Book.all
+    if params[:json]
+      render :json => Book.all
+    else
+      @books = Book.all
+    end
   end
 
   def show
-    @book
+    if params[:json]
+      render :json => @book
+    else
+      @book
+    end
   end
 
   private
