@@ -39,6 +39,10 @@ class BooksController < ApplicationController
     end
   end
 
+  def report
+    @books = Book.where('release_date LIKE ?', '%2018%').where(:format_id => 1)
+  end
+
   private
 
   def book_params

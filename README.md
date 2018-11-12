@@ -1,28 +1,25 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+# Setup
+Use Ruby Version 2.3.3p222
 
-Things you may want to cover:
+If you are not using this version, use `rvm` to switch to the correct version"
+`rvm install ruby-X.X.X`
+`rvm --default use ruby-X.X.X`
+`Replace the "X" with the correct Ruby Version`
 
-* Ruby version
+#Dependencies
+Run `bundle install` to install all dependencies.
 
-* System dependencies
+# Running
+Simply run `rails s` to start the server and run it on http://localhost:3000/books
+to view all books.
 
-* Configuration
+Clicking on a book's title will redirect you to that specific books' show page.
+For example clicking on the first title in the book#index will redirect you to http://localhost:3000/books/1.
 
-* Database creation
+To create new books head to http://localhost:3000/books/new
 
-* Database initialization
+# For JSON
 
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
-
-<!-- Problems to tackle-->
-<!-- A book must have a title and release date. If the release date is within 2 months it
-must have a base price. -->
+Enter `?json=true` query string parameter to get any book route in JSON format.
