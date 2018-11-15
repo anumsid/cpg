@@ -22,4 +22,9 @@ To create new books head to http://localhost:3000/books/new
 
 # For JSON
 
-Enter `?json=true` query string parameter to get any book route in JSON format.
+Enter `accept: application/json` in the request headers to get any book route in JSON format.
+
+# Variations from Requirements
+In the requirements, a JSON book POST request should contain ID. It is not best practice to assign an ID from the client, but rather, server generates ID and sends it back in the response. Format_id is accepted instead, as format_id was missing from the requirements.
+
+Also in book POST request, in JSON format, author_id is singular. Throughout the rest of the requirements, a book can contain more than one author. For JSON POST requests, author_id is authors_ids, and must be an array of ID strings.

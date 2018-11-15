@@ -1,2 +1,37 @@
-<h1>Books#edit</h1>
-<p>Find me in app/views/books/edit.html.erb</p>
+<h1>Edit Book</h1>
+
+<%= form_for @book, :html => {:data => {:abide => ''}, :novalidate => ''} do |f| %>
+  <div class="grid-x grid-margin-x">
+    <div class="cell">
+      <% if @book.errors.any? %>
+        <p style="color: red;"><i class="fi-alert"></i> There are some errors in your form.</p>
+      <% end if %>
+    </div>
+  </div>
+
+  <div class="grid-x grid-margin-x align-center">
+      <div class="cell small-8">
+        <%= f.label :title %>
+        <%= f.text_field :title %>
+      </div>
+      <div class="cell small-8">
+        <%= f.label :release_date %>
+        <%= f.text_field :release_date %>
+      </div>
+      <div class="cell small-8">
+        <%= f.label :base_price %>
+        <%= f.text_field :base_price %>
+      </div>
+      <div class="cell small-8">
+        <%= f.label :author %>
+        <%= select_tag :authors_ids, options_for_select(Author.all.collect { |author| [author.full_name, author.id] }, @book.authors.pluck(:id)), {:multiple=>true} %>
+      </div>
+      <div class="cell small-8">
+        <%= f.label :format %>
+        <%= f.select :format_id, options_for_select(Format.all.collect { |fmt| [fmt.name, fmt.id] }, @book.format_id)  %>
+      </div>
+      <div class="cell small-8">
+        <%= f.submit "Save Changes", :class => "button" %>
+      </div>
+  </div>
+<% end %>

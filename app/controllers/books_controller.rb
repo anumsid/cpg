@@ -9,7 +9,11 @@ class BooksController < ApplicationController
     @book = Book.new(book_params)
     @book.authors << Author.where(id: params[:authors_ids])
     if @book.save
-       @book
+      if request.headers["Content-Type"] == "application/json"
+        render :json => @book, :include => :authors
+      else
+        redirect_to :action => "index"
+     end
     else
       render :new
     end
@@ -17,25 +21,29 @@ class BooksController < ApplicationController
 
   def update
     @book.update(book_params)
+    @book.authors = Author.where(id: params[:authors_ids])
     if @book.save
-     @book
+     redirect_to :action => "show", :id => @book.id
     end
+  end
+
+  def edit
+    @book = find_book
   end
 
 
   def index
-    if params[:json]
-      render :json => Book.all
-    else
-      @books = Book.all
+    @books = Book.all
+    respond_to do |format|
+      format.html
+      format.json { render json: @books, include: :authors }
     end
   end
 
   def show
-    if params[:json]
-      render :json => @book
-    else
-      @book
+    respond_to do |format|
+      format.html
+      format.json { render json: @book, include: :authors }
     end
   end
 
